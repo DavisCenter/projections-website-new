@@ -1211,22 +1211,10 @@
 
   /* === Roster cell color-coding (per child per month) ===
      Each child-cell can be in one of four states based on scheduled events:
-       - is-departing    blue    — transitioning out of this room next month
-       - is-arriving     purple  — transitioned INTO this room this month
        - is-disenrolling orange  — leaving the center this month
        - is-new-start    yellow  — starting at the center this month
      States are mutually exclusive; priority (when multiple could apply):
      disenrolling > new-start > arriving > departing. */
-  .roster-child.is-departing {
-    background: rgba(59, 130, 246, 0.28);
-    border-left: 3px solid #2563eb;
-    padding-left: 7px;
-  }
-  .roster-child.is-arriving {
-    background: rgba(139, 92, 246, 0.12);
-    border-left: 3px solid #8b5cf6;
-    padding-left: 7px;
-  }
   .roster-child.is-disenrolling {
     background: rgba(236, 72, 153, 0.28);
     border-left: 3px solid #db2777;
