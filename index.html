@@ -30,7 +30,7 @@
   }
 
   /* Classroom accent colors (subtle left border) */
-  .classroom-section[data-classroom="infant_a"]      { --accent-bar: #8fb8d6; }
+  .classroom-section[data-classroom="Infant Foundations"]      { --accent-bar: #8fb8d6; }
   .classroom-section[data-classroom="infant_b"]      { --accent-bar: #7cc4b8; }
   .classroom-section[data-classroom="toddlers"]      { --accent-bar: #9bc97a; }
   .classroom-section[data-classroom="twos"]          { --accent-bar: #e3c769; }
@@ -710,7 +710,7 @@
     border-bottom-color: var(--accent);
     font-weight: 650;
   }
-  .nav-tab[data-classroom-id="infant_a"].is-active      { border-bottom-color: #8fb8d6; }
+  .nav-tab[data-classroom-id="Infant Foundations"].is-active      { border-bottom-color: #8fb8d6; }
   .nav-tab[data-classroom-id="infant_b"].is-active      { border-bottom-color: #7cc4b8; }
   .nav-tab[data-classroom-id="toddlers"].is-active      { border-bottom-color: #9bc97a; }
   .nav-tab[data-classroom-id="twos"].is-active          { border-bottom-color: #e3c769; }
@@ -1095,7 +1095,7 @@
     border-left: 4px solid var(--accent-bar, var(--border));
     min-width: 160px;
   }
-  .roster-cell.is-classroom-label[data-classroom="infant_a"]      { --accent-bar: #8fb8d6; }
+  .roster-cell.is-classroom-label[data-classroom="Infant Foundations"]      { --accent-bar: #8fb8d6; }
   .roster-cell.is-classroom-label[data-classroom="infant_b"]      { --accent-bar: #7cc4b8; }
   .roster-cell.is-classroom-label[data-classroom="toddlers"]      { --accent-bar: #9bc97a; }
   .roster-cell.is-classroom-label[data-classroom="twos"]          { --accent-bar: #e3c769; }
@@ -2319,7 +2319,7 @@ const storage = (() => {
 // Each classroom carries its age range in months. Used both for the displayed
 // age range label and for live classroom assignment based on child's current age.
 const CLASSROOMS = [
-  { id: 'infant_a',      name: 'Infant Foundations',      ageRange: '6 weeks – 9 months',  minMonths: 0,  maxMonths: 9,  ratio: '1:4',  capacity: 7  },
+  { id: 'Infant Foundations',      name: 'Infant Foundations',      ageRange: '6 weeks – 9 months',  minMonths: 0,  maxMonths: 9,  ratio: '1:4',  capacity: 7  },
   { id: 'infant_b',      name: 'Infant Explorers',      ageRange: '9 – 15 months',       minMonths: 9,  maxMonths: 15, ratio: '1:5',  capacity: 8  },
   { id: 'toddlers',      name: 'Toddler Foundations',      ageRange: '15 – 24 months',      minMonths: 15, maxMonths: 24, ratio: '1:6',  capacity: 10 },
   { id: 'twos',          name: 'Toddler Explorers',          ageRange: '24 – 36 months',      minMonths: 24, maxMonths: 36, ratio: '1:7',  capacity: 12 },
@@ -2372,42 +2372,42 @@ const SEED_ENTRIES = [
   {"id": "wl_seed_002", "childName": "Jonathon Montecalvo", "childBirthday": "2023-03-19", "classroomId": "preschool_one", "parentName": "Cassi Montecalvo", "email": "", "phone": "805-205-5979", "isASAP": false, "preferredStartDate": "2026-08-01", "lastContacted": null, "notes": "", "dateAdded": "2026-03-03T11:42:00Z"},
   {"id": "wl_seed_003", "childName": "Saint", "childBirthday": "2023-04-20", "classroomId": "preschool_one", "parentName": "Mary Marks", "email": "", "phone": "865-936-3169", "isASAP": true, "preferredStartDate": null, "lastContacted": null, "notes": "", "dateAdded": "2026-03-03T11:58:57Z"},
   {"id": "wl_seed_004", "childName": "Henry Miller", "childBirthday": "2025-08-20", "classroomId": "toddlers", "parentName": "Mary Kate Miller", "email": "", "phone": "406-579-5813", "isASAP": false, "preferredStartDate": "2027-08-01", "lastContacted": null, "notes": "", "dateAdded": "2026-03-03T12:02:02Z"},
-  {"id": "wl_seed_005", "childName": "\"Delphy\" Lena Delphine Kendrick", "childBirthday": "2026-09-02", "classroomId": "infant_a", "parentName": "Hunter Kendrick", "email": "hunterkendrick88@gmail.com", "phone": "865-567-2970", "isASAP": false, "preferredStartDate": "2026-10-19", "lastContacted": null, "notes": "", "dateAdded": "2026-03-05T15:16:48Z"},
-  {"id": "wl_seed_006", "childName": "Cade Myers", "childBirthday": "2026-05-07", "classroomId": "infant_a", "parentName": "Amber Myers", "email": "", "phone": "865-254-6197", "isASAP": false, "preferredStartDate": "2026-08-01", "lastContacted": "2026-04-06", "notes": "", "dateAdded": "2026-03-06T13:56:58Z"},
-  {"id": "wl_seed_007", "childName": "Baby Wilson", "childBirthday": "2026-03-20", "classroomId": "infant_a", "parentName": "Sara Wilson", "email": "", "phone": "865-705-2084", "isASAP": false, "preferredStartDate": "2026-06-01", "lastContacted": "2026-04-07", "notes": "", "dateAdded": "2026-03-06T13:57:45Z"},
-  {"id": "wl_seed_008", "childName": "Oliver Lay", "childBirthday": "2026-05-01", "classroomId": "infant_a", "parentName": "Jasmine Lay", "email": "", "phone": "423-215-4603", "isASAP": false, "preferredStartDate": "2026-08-01", "lastContacted": null, "notes": "", "dateAdded": "2026-03-06T13:59:17Z"},
-  {"id": "wl_seed_009", "childName": "Eliza Brown", "childBirthday": "2026-04-20", "classroomId": "infant_a", "parentName": "Emma Brown", "email": "", "phone": "423-432-7708", "isASAP": false, "preferredStartDate": "2026-06-01", "lastContacted": "2026-03-23", "notes": "", "dateAdded": "2026-03-06T14:00:17Z"},
-  {"id": "wl_seed_010", "childName": "Baby See", "childBirthday": "2026-06-01", "classroomId": "infant_a", "parentName": "Gretchen See", "email": "krattsg@gmail.com", "phone": "865-719-4082", "isASAP": false, "preferredStartDate": "2026-08-01", "lastContacted": null, "notes": "Probably only needing part-time attendance through August", "dateAdded": "2026-03-06T14:04:57Z"},
-  {"id": "wl_seed_011", "childName": "Graham Noel", "childBirthday": "2026-05-01", "classroomId": "infant_a", "parentName": "Sarah Noel", "email": "thisissarahrose@gmail.com", "phone": "865-323-6204", "isASAP": false, "preferredStartDate": "2026-08-01", "lastContacted": null, "notes": "", "dateAdded": "2026-03-06T14:42:53Z"},
-  {"id": "wl_seed_012", "childName": "Baby Girl Ward", "childBirthday": "2026-06-01", "classroomId": "infant_a", "parentName": "Monica Ward", "email": "moni.ward23@gmail.com", "phone": "865-556-9934", "isASAP": false, "preferredStartDate": "2026-10-01", "lastContacted": null, "notes": "If not available in October, August of 2027", "dateAdded": "2026-03-09T10:41:29Z"},
-  {"id": "wl_seed_013", "childName": "Baby Cooper", "childBirthday": "2026-09-20", "classroomId": "infant_a", "parentName": "April Cooper", "email": "aprillyons168@yahoo.com", "phone": "865-964-8736", "isASAP": false, "preferredStartDate": "2027-01-01", "lastContacted": null, "notes": "", "dateAdded": "2026-03-10T10:15:01Z"},
+  {"id": "wl_seed_005", "childName": "\"Delphy\" Lena Delphine Kendrick", "childBirthday": "2026-09-02", "classroomId": "Infant Foundations", "parentName": "Hunter Kendrick", "email": "hunterkendrick88@gmail.com", "phone": "865-567-2970", "isASAP": false, "preferredStartDate": "2026-10-19", "lastContacted": null, "notes": "", "dateAdded": "2026-03-05T15:16:48Z"},
+  {"id": "wl_seed_006", "childName": "Cade Myers", "childBirthday": "2026-05-07", "classroomId": "Infant Foundations", "parentName": "Amber Myers", "email": "", "phone": "865-254-6197", "isASAP": false, "preferredStartDate": "2026-08-01", "lastContacted": "2026-04-06", "notes": "", "dateAdded": "2026-03-06T13:56:58Z"},
+  {"id": "wl_seed_007", "childName": "Baby Wilson", "childBirthday": "2026-03-20", "classroomId": "Infant Foundations", "parentName": "Sara Wilson", "email": "", "phone": "865-705-2084", "isASAP": false, "preferredStartDate": "2026-06-01", "lastContacted": "2026-04-07", "notes": "", "dateAdded": "2026-03-06T13:57:45Z"},
+  {"id": "wl_seed_008", "childName": "Oliver Lay", "childBirthday": "2026-05-01", "classroomId": "Infant Foundations", "parentName": "Jasmine Lay", "email": "", "phone": "423-215-4603", "isASAP": false, "preferredStartDate": "2026-08-01", "lastContacted": null, "notes": "", "dateAdded": "2026-03-06T13:59:17Z"},
+  {"id": "wl_seed_009", "childName": "Eliza Brown", "childBirthday": "2026-04-20", "classroomId": "Infant Foundations", "parentName": "Emma Brown", "email": "", "phone": "423-432-7708", "isASAP": false, "preferredStartDate": "2026-06-01", "lastContacted": "2026-03-23", "notes": "", "dateAdded": "2026-03-06T14:00:17Z"},
+  {"id": "wl_seed_010", "childName": "Baby See", "childBirthday": "2026-06-01", "classroomId": "Infant Foundations", "parentName": "Gretchen See", "email": "krattsg@gmail.com", "phone": "865-719-4082", "isASAP": false, "preferredStartDate": "2026-08-01", "lastContacted": null, "notes": "Probably only needing part-time attendance through August", "dateAdded": "2026-03-06T14:04:57Z"},
+  {"id": "wl_seed_011", "childName": "Graham Noel", "childBirthday": "2026-05-01", "classroomId": "Infant Foundations", "parentName": "Sarah Noel", "email": "thisissarahrose@gmail.com", "phone": "865-323-6204", "isASAP": false, "preferredStartDate": "2026-08-01", "lastContacted": null, "notes": "", "dateAdded": "2026-03-06T14:42:53Z"},
+  {"id": "wl_seed_012", "childName": "Baby Girl Ward", "childBirthday": "2026-06-01", "classroomId": "Infant Foundations", "parentName": "Monica Ward", "email": "moni.ward23@gmail.com", "phone": "865-556-9934", "isASAP": false, "preferredStartDate": "2026-10-01", "lastContacted": null, "notes": "If not available in October, August of 2027", "dateAdded": "2026-03-09T10:41:29Z"},
+  {"id": "wl_seed_013", "childName": "Baby Cooper", "childBirthday": "2026-09-20", "classroomId": "Infant Foundations", "parentName": "April Cooper", "email": "aprillyons168@yahoo.com", "phone": "865-964-8736", "isASAP": false, "preferredStartDate": "2027-01-01", "lastContacted": null, "notes": "", "dateAdded": "2026-03-10T10:15:01Z"},
   {"id": "wl_seed_014", "childName": "Desmond Stone", "childBirthday": "2024-03-07", "classroomId": "twos", "parentName": "Cirea Hawley", "email": "cireahawley86@icloud.com", "phone": "865-804-1157", "isASAP": false, "preferredStartDate": "2026-03-17", "lastContacted": null, "notes": "", "dateAdded": "2026-03-17T16:59:32Z"},
   {"id": "wl_seed_015", "childName": "Lorraine Hendrick", "childBirthday": "2025-09-24", "classroomId": "infant_b", "parentName": "Jane Hendrick", "email": "janehendrick05@gmail.com", "phone": "931-510-7878", "isASAP": false, "preferredStartDate": "2026-07-06", "lastContacted": null, "notes": "", "dateAdded": "2026-03-17T21:39:18Z"},
-  {"id": "wl_seed_016", "childName": "Charlie Dobbs", "childBirthday": "2026-05-15", "classroomId": "infant_a", "parentName": "Danielle Dobbs", "email": "danielle123brewer@gmail.com", "phone": "865-556-4493", "isASAP": false, "preferredStartDate": "2026-08-01", "lastContacted": null, "notes": "", "dateAdded": "2026-03-18T13:18:39Z"},
-  {"id": "wl_seed_017", "childName": "Beckham Washington", "childBirthday": "2026-05-19", "classroomId": "infant_a", "parentName": "Mariah Washington", "email": "mghwashington@gmail.com", "phone": "205-886-0913", "isASAP": false, "preferredStartDate": "2026-08-10", "lastContacted": null, "notes": "Hi there! I am curious if y’all offer part time option or just full time. Would be interested either way :) would you also mind sending me pricing information before we come tour? Thank you so much for your time!", "dateAdded": "2026-03-27T10:58:37Z"},
+  {"id": "wl_seed_016", "childName": "Charlie Dobbs", "childBirthday": "2026-05-15", "classroomId": "Infant Foundations", "parentName": "Danielle Dobbs", "email": "danielle123brewer@gmail.com", "phone": "865-556-4493", "isASAP": false, "preferredStartDate": "2026-08-01", "lastContacted": null, "notes": "", "dateAdded": "2026-03-18T13:18:39Z"},
+  {"id": "wl_seed_017", "childName": "Beckham Washington", "childBirthday": "2026-05-19", "classroomId": "Infant Foundations", "parentName": "Mariah Washington", "email": "mghwashington@gmail.com", "phone": "205-886-0913", "isASAP": false, "preferredStartDate": "2026-08-10", "lastContacted": null, "notes": "Hi there! I am curious if y’all offer part time option or just full time. Would be interested either way :) would you also mind sending me pricing information before we come tour? Thank you so much for your time!", "dateAdded": "2026-03-27T10:58:37Z"},
   {"id": "wl_seed_018", "childName": "Jameson Wayland", "childBirthday": "2024-06-07", "classroomId": "toddlers", "parentName": "Bailey Wayland", "email": "baileewayland@gmail.com", "phone": "865-696-0393", "isASAP": true, "preferredStartDate": null, "lastContacted": null, "notes": "", "dateAdded": "2026-03-30T14:11:00Z"},
-  {"id": "wl_seed_019", "childName": "Leonardo", "childBirthday": "2025-12-12", "classroomId": "infant_a", "parentName": "Crystal Hernandez", "email": "crystalh1002@icloud.com", "phone": "865-399-4466", "isASAP": true, "preferredStartDate": null, "lastContacted": null, "notes": "Toured 3/31/2026", "dateAdded": "2026-03-31T13:54:26Z"},
+  {"id": "wl_seed_019", "childName": "Leonardo", "childBirthday": "2025-12-12", "classroomId": "Infant Foundations", "parentName": "Crystal Hernandez", "email": "crystalh1002@icloud.com", "phone": "865-399-4466", "isASAP": true, "preferredStartDate": null, "lastContacted": null, "notes": "Toured 3/31/2026", "dateAdded": "2026-03-31T13:54:26Z"},
   {"id": "wl_seed_020", "childName": "Henley Campbell", "childBirthday": "2022-11-10", "classroomId": "preschool_one", "parentName": "Clara Campbell", "email": "clara_henley@yahoo.com", "phone": "901-634-3269", "isASAP": true, "preferredStartDate": null, "lastContacted": null, "notes": "Toured 4/17/2026", "dateAdded": "2026-04-17T14:08:54Z"},
   {"id": "wl_seed_021", "childName": "Daniel", "childBirthday": "2024-08-16", "classroomId": "toddlers", "parentName": "Rachel Ellestad", "email": "rachel.m.ellestad@gmail.com", "phone": "865-585-3325", "isASAP": false, "preferredStartDate": "2026-07-15", "lastContacted": null, "notes": "My family and I are making plans to move back to the Fountain City/Knoxville area in July. My two year old son, Daniel, is currently in daycare where we live and loves it - so we are looking at options to get him enrolled once we move.", "dateAdded": "2026-04-27T21:50:43Z"},
-  {"id": "wl_seed_022", "childName": "Baby Noble", "childBirthday": "2026-08-01", "classroomId": "infant_a", "parentName": "Matt Noble", "email": "cmarty.noble@gmail.com", "phone": "865-308-0922", "isASAP": false, "preferredStartDate": "2026-10-01", "lastContacted": null, "notes": "", "dateAdded": "2026-05-05T10:26:31Z"}
+  {"id": "wl_seed_022", "childName": "Baby Noble", "childBirthday": "2026-08-01", "classroomId": "Infant Foundations", "parentName": "Matt Noble", "email": "cmarty.noble@gmail.com", "phone": "865-308-0922", "isASAP": false, "preferredStartDate": "2026-10-01", "lastContacted": null, "notes": "", "dateAdded": "2026-05-05T10:26:31Z"}
 ];
 
 // Imported entries from WAITLIST-Director.xlsx (May 2026).
 // Filtered: grey-shaded rows skipped, plus entries added >12mo ago without a callback.
 const SEED_ENTRIES_V2 = [
-  {"id": "wl_dir_007", "childName": "Baby Hull", "childBirthday": "2026-02-01", "classroomId": "infant_a", "parentName": "Amber Hull", "email": "", "phone": "865-292-4333", "isASAP": false, "preferredStartDate": "2026-04-15", "lastContacted": "2026-01-20", "notes": "", "dateAdded": "2025-06-17T00:00:00Z"},
-  {"id": "wl_dir_008", "childName": "Abigail Deaderick", "childBirthday": "2026-02-09", "classroomId": "infant_a", "parentName": "Carmen Deaderick", "email": "", "phone": "901-483-9550", "isASAP": false, "preferredStartDate": "2026-05-01", "lastContacted": "2026-03-13", "notes": "Family of Jameson Woodie", "dateAdded": "2025-08-01T00:00:00Z"},
-  {"id": "wl_dir_009", "childName": "Cade Dibble", "childBirthday": "2025-06-01", "classroomId": "infant_a", "parentName": "Carlyn Dibble", "email": "", "phone": "407-770-7781", "isASAP": false, "preferredStartDate": "2025-10-13", "lastContacted": null, "notes": "", "dateAdded": "2025-08-12T00:00:00Z"},
-  {"id": "wl_dir_010", "childName": "Rowan Akins", "childBirthday": "2025-08-12", "classroomId": "infant_a", "parentName": "Brandon Akins", "email": "", "phone": "865-560-6918", "isASAP": false, "preferredStartDate": "2025-12-01", "lastContacted": null, "notes": "", "dateAdded": "2025-08-29T00:00:00Z"},
-  {"id": "wl_dir_011", "childName": "Mia Davis", "childBirthday": "2025-09-05", "classroomId": "infant_a", "parentName": "Jessica Davis", "email": "", "phone": "423-943-3452", "isASAP": false, "preferredStartDate": "2025-12-31", "lastContacted": null, "notes": "", "dateAdded": "2025-08-29T00:00:00Z"},
-  {"id": "wl_dir_012", "childName": "Baby Crowson", "childBirthday": "2026-05-01", "classroomId": "infant_a", "parentName": "Katie Crowson", "email": "", "phone": "615-300-1915", "isASAP": false, "preferredStartDate": "2026-08-01", "lastContacted": null, "notes": "Jon Crowson 865-803-8616", "dateAdded": "2025-09-02T00:00:00Z"},
-  {"id": "wl_dir_013", "childName": "Joseph Barkley", "childBirthday": "2025-08-04", "classroomId": "infant_a", "parentName": "Sarah Barkley", "email": "", "phone": "570-815-0535", "isASAP": false, "preferredStartDate": null, "lastContacted": null, "notes": "", "dateAdded": "2025-12-16T00:00:00Z"},
-  {"id": "wl_dir_014", "childName": "Baby Reeves", "childBirthday": "2026-07-04", "classroomId": "infant_a", "parentName": "Mary Catherine Reeves", "email": "", "phone": "865-567-6157", "isASAP": false, "preferredStartDate": "2026-10-01", "lastContacted": null, "notes": "", "dateAdded": "2026-01-02T00:00:00Z"},
-  {"id": "wl_dir_015", "childName": "Baby Walden", "childBirthday": "2026-07-01", "classroomId": "infant_a", "parentName": "Emily", "email": "", "phone": "865-617-7456", "isASAP": false, "preferredStartDate": "2026-10-01", "lastContacted": "2026-04-01", "notes": "", "dateAdded": "2026-01-02T00:00:00Z"},
-  {"id": "wl_dir_016", "childName": "Beau Ullmann", "childBirthday": "2026-05-05", "classroomId": "infant_a", "parentName": "Michala Manfredo-Ullman", "email": "michalamanfredo@outlook.com", "phone": "", "isASAP": false, "preferredStartDate": "2026-08-01", "lastContacted": null, "notes": "", "dateAdded": "2026-01-20T00:00:00Z"},
-  {"id": "wl_dir_017", "childName": "Dean Wood", "childBirthday": "2026-02-06", "classroomId": "infant_a", "parentName": "Madison Wood", "email": "", "phone": "941-374-3105", "isASAP": false, "preferredStartDate": "2026-06-01", "lastContacted": "2026-03-27", "notes": "", "dateAdded": "2026-01-23T00:00:00Z"},
-  {"id": "wl_dir_018", "childName": "Natalie Adams", "childBirthday": "2026-07-18", "classroomId": "infant_a", "parentName": "Elissa Adams", "email": "", "phone": "901-426-4290", "isASAP": false, "preferredStartDate": "2026-09-01", "lastContacted": "2026-03-30", "notes": "Tyrese 253-290-2623", "dateAdded": "2026-01-30T00:00:00Z"},
-  {"id": "wl_dir_019", "childName": "Baby Keith", "childBirthday": "2026-05-01", "classroomId": "infant_a", "parentName": "Emily Keith", "email": "", "phone": "865-320-6400", "isASAP": false, "preferredStartDate": "2026-08-01", "lastContacted": null, "notes": "Sibling in Toddlers", "dateAdded": "2026-02-06T00:00:00Z"},
+  {"id": "wl_dir_007", "childName": "Baby Hull", "childBirthday": "2026-02-01", "classroomId": "Infant Foundations", "parentName": "Amber Hull", "email": "", "phone": "865-292-4333", "isASAP": false, "preferredStartDate": "2026-04-15", "lastContacted": "2026-01-20", "notes": "", "dateAdded": "2025-06-17T00:00:00Z"},
+  {"id": "wl_dir_008", "childName": "Abigail Deaderick", "childBirthday": "2026-02-09", "classroomId": "Infant Foundations", "parentName": "Carmen Deaderick", "email": "", "phone": "901-483-9550", "isASAP": false, "preferredStartDate": "2026-05-01", "lastContacted": "2026-03-13", "notes": "Family of Jameson Woodie", "dateAdded": "2025-08-01T00:00:00Z"},
+  {"id": "wl_dir_009", "childName": "Cade Dibble", "childBirthday": "2025-06-01", "classroomId": "Infant Foundations", "parentName": "Carlyn Dibble", "email": "", "phone": "407-770-7781", "isASAP": false, "preferredStartDate": "2025-10-13", "lastContacted": null, "notes": "", "dateAdded": "2025-08-12T00:00:00Z"},
+  {"id": "wl_dir_010", "childName": "Rowan Akins", "childBirthday": "2025-08-12", "classroomId": "Infant Foundations", "parentName": "Brandon Akins", "email": "", "phone": "865-560-6918", "isASAP": false, "preferredStartDate": "2025-12-01", "lastContacted": null, "notes": "", "dateAdded": "2025-08-29T00:00:00Z"},
+  {"id": "wl_dir_011", "childName": "Mia Davis", "childBirthday": "2025-09-05", "classroomId": "Infant Foundations", "parentName": "Jessica Davis", "email": "", "phone": "423-943-3452", "isASAP": false, "preferredStartDate": "2025-12-31", "lastContacted": null, "notes": "", "dateAdded": "2025-08-29T00:00:00Z"},
+  {"id": "wl_dir_012", "childName": "Baby Crowson", "childBirthday": "2026-05-01", "classroomId": "Infant Foundations", "parentName": "Katie Crowson", "email": "", "phone": "615-300-1915", "isASAP": false, "preferredStartDate": "2026-08-01", "lastContacted": null, "notes": "Jon Crowson 865-803-8616", "dateAdded": "2025-09-02T00:00:00Z"},
+  {"id": "wl_dir_013", "childName": "Joseph Barkley", "childBirthday": "2025-08-04", "classroomId": "Infant Foundations", "parentName": "Sarah Barkley", "email": "", "phone": "570-815-0535", "isASAP": false, "preferredStartDate": null, "lastContacted": null, "notes": "", "dateAdded": "2025-12-16T00:00:00Z"},
+  {"id": "wl_dir_014", "childName": "Baby Reeves", "childBirthday": "2026-07-04", "classroomId": "Infant Foundations", "parentName": "Mary Catherine Reeves", "email": "", "phone": "865-567-6157", "isASAP": false, "preferredStartDate": "2026-10-01", "lastContacted": null, "notes": "", "dateAdded": "2026-01-02T00:00:00Z"},
+  {"id": "wl_dir_015", "childName": "Baby Walden", "childBirthday": "2026-07-01", "classroomId": "Infant Foundations", "parentName": "Emily", "email": "", "phone": "865-617-7456", "isASAP": false, "preferredStartDate": "2026-10-01", "lastContacted": "2026-04-01", "notes": "", "dateAdded": "2026-01-02T00:00:00Z"},
+  {"id": "wl_dir_016", "childName": "Beau Ullmann", "childBirthday": "2026-05-05", "classroomId": "Infant Foundations", "parentName": "Michala Manfredo-Ullman", "email": "michalamanfredo@outlook.com", "phone": "", "isASAP": false, "preferredStartDate": "2026-08-01", "lastContacted": null, "notes": "", "dateAdded": "2026-01-20T00:00:00Z"},
+  {"id": "wl_dir_017", "childName": "Dean Wood", "childBirthday": "2026-02-06", "classroomId": "Infant Foundations", "parentName": "Madison Wood", "email": "", "phone": "941-374-3105", "isASAP": false, "preferredStartDate": "2026-06-01", "lastContacted": "2026-03-27", "notes": "", "dateAdded": "2026-01-23T00:00:00Z"},
+  {"id": "wl_dir_018", "childName": "Natalie Adams", "childBirthday": "2026-07-18", "classroomId": "Infant Foundations", "parentName": "Elissa Adams", "email": "", "phone": "901-426-4290", "isASAP": false, "preferredStartDate": "2026-09-01", "lastContacted": "2026-03-30", "notes": "Tyrese 253-290-2623", "dateAdded": "2026-01-30T00:00:00Z"},
+  {"id": "wl_dir_019", "childName": "Baby Keith", "childBirthday": "2026-05-01", "classroomId": "Infant Foundations", "parentName": "Emily Keith", "email": "", "phone": "865-320-6400", "isASAP": false, "preferredStartDate": "2026-08-01", "lastContacted": null, "notes": "Sibling in Toddlers", "dateAdded": "2026-02-06T00:00:00Z"},
   {"id": "wl_dir_022", "childName": "Lyla Williams", "childBirthday": "2025-01-06", "classroomId": "infant_b", "parentName": "Alyssa Williams", "email": "", "phone": "865-640-0379", "isASAP": false, "preferredStartDate": "2025-03-01", "lastContacted": "2024-11-26", "notes": "", "dateAdded": "2024-06-04T00:00:00Z"},
   {"id": "wl_dir_023", "childName": "Baby Dunagan", "childBirthday": "2025-04-01", "classroomId": "infant_b", "parentName": "Dustin Dunagan", "email": "", "phone": "865-201-1923", "isASAP": false, "preferredStartDate": "2025-07-01", "lastContacted": null, "notes": "Maca Fuller", "dateAdded": "2025-10-01T00:00:00Z"},
   {"id": "wl_dir_024", "childName": "Sasha Moulden", "childBirthday": "2024-11-13", "classroomId": "infant_b", "parentName": "Regina Turner", "email": "", "phone": "865-680-4464", "isASAP": true, "preferredStartDate": null, "lastContacted": null, "notes": "", "dateAdded": "2025-11-20T00:00:00Z"},
@@ -2475,13 +2475,13 @@ const SEED_ENTRIES_V2 = [
 const ENROLLMENT_SEED = {
   "baselineDate": "2026-03-01",
   "children": [
-    {"name": "Scarlett Hall",       "dob": "2025-11-06", "currentClassroomId": "infant_a"},
-    {"name": "Cooper Trovillo",     "dob": "2025-10-14", "currentClassroomId": "infant_a"},
-    {"name": "Lily Antal",          "dob": "2025-09-11", "currentClassroomId": "infant_a"},
-    {"name": "Nellie Freeman",      "dob": "2025-09-01", "currentClassroomId": "infant_a"},
-    {"name": "Joseph Barkley",      "dob": "2025-08-04", "currentClassroomId": "infant_a"},
-    {"name": "Mattly Lay",          "dob": "2025-07-28", "currentClassroomId": "infant_a"},
-    {"name": "Cameron Defur",       "dob": "2025-07-10", "currentClassroomId": "infant_a"},
+    {"name": "Scarlett Hall",       "dob": "2025-11-06", "currentClassroomId": "Infant Foundations"},
+    {"name": "Cooper Trovillo",     "dob": "2025-10-14", "currentClassroomId": "Infant Foundations"},
+    {"name": "Lily Antal",          "dob": "2025-09-11", "currentClassroomId": "Infant Foundations"},
+    {"name": "Nellie Freeman",      "dob": "2025-09-01", "currentClassroomId": "Infant Foundations"},
+    {"name": "Joseph Barkley",      "dob": "2025-08-04", "currentClassroomId": "Infant Foundations"},
+    {"name": "Mattly Lay",          "dob": "2025-07-28", "currentClassroomId": "Infant Foundations"},
+    {"name": "Cameron Defur",       "dob": "2025-07-10", "currentClassroomId": "Infant Foundations"},
     {"name": "Katherine Holbert",   "dob": "2025-05-12", "currentClassroomId": "infant_b"},
     {"name": "Bonnie Underwood",    "dob": "2025-04-08", "currentClassroomId": "infant_b"},
     {"name": "Collin Searcy",       "dob": "2025-02-01", "currentClassroomId": "infant_b"},
@@ -2547,10 +2547,10 @@ const ENROLLMENT_SEED = {
     {"name": "Ivy Bishop",          "dob": null,         "currentClassroomId": null, "transitionOnly": true}
   ],
   "transitions": [
-    {"childName": "Asher Reineri",    "targetClassroomId": "infant_a",      "type": "withdrawal", "transitionWeek": null,        "effectiveDate": "2026-02-27"},
-    {"childName": "Nellie Freeman",   "targetClassroomId": "infant_a",      "type": "new_start",  "transitionWeek": null,        "effectiveDate": "2026-03-02"},
-    {"childName": "Mattly Lay",       "targetClassroomId": "infant_a",      "type": "new_start",  "transitionWeek": null,        "effectiveDate": "2026-03-02"},
-    {"childName": "Bonnie Underwood", "targetClassroomId": "infant_a",      "type": "transition", "transitionWeek": "2/23-2/27", "effectiveDate": "2026-03-02"},
+    {"childName": "Asher Reineri",    "targetClassroomId": "Infant Foundations",      "type": "withdrawal", "transitionWeek": null,        "effectiveDate": "2026-02-27"},
+    {"childName": "Nellie Freeman",   "targetClassroomId": "Infant Foundations",      "type": "new_start",  "transitionWeek": null,        "effectiveDate": "2026-03-02"},
+    {"childName": "Mattly Lay",       "targetClassroomId": "Infant Foundations",      "type": "new_start",  "transitionWeek": null,        "effectiveDate": "2026-03-02"},
+    {"childName": "Bonnie Underwood", "targetClassroomId": "Infant Foundations",      "type": "transition", "transitionWeek": "2/23-2/27", "effectiveDate": "2026-03-02"},
     {"childName": "Ember Pagel",      "targetClassroomId": "infant_b",      "type": "withdrawal", "transitionWeek": null,        "effectiveDate": "2026-02-20"},
     {"childName": "Gemma West",       "targetClassroomId": "toddlers",      "type": "transition", "transitionWeek": "2/23-2/27", "effectiveDate": "2026-03-02"},
     {"childName": "Deacon Defur",     "targetClassroomId": "toddlers",      "type": "transition", "transitionWeek": "2/23-2/27", "effectiveDate": "2026-03-02"},
@@ -4841,7 +4841,7 @@ function openCellActionPopover(childId, clickedMonthIso) {
 
   // Move Back button — moves the child to the previous classroom, effective
   // the FIRST day of the month before the clicked month.
-  const backDisabled = !prevRoom || currentRoomId === 'infant_a';
+  const backDisabled = !prevRoom || currentRoomId === 'Infant Foundations';
   backBtn.disabled = backDisabled;
   backBtn.innerHTML = `&larr; Move Back to ${escapeHtml(prevMonthLabel)}`;
   backBtn.title = prevRoom
@@ -4997,7 +4997,7 @@ function applyCellActionMove(direction, effectiveDate, transitionWeek) {
   const targetRoom = CLASSROOMS[currentIdx + direction];
   if (!targetRoom) return;
   // Disabled-state guards (defense in depth, in case the button somehow fired).
-  if (direction === -1 && currentRoomId === 'infant_a') return;
+  if (direction === -1 && currentRoomId === 'Infant Foundations') return;
   if (direction ===  1 && currentRoomId === 'prek')     return;
 
   const moveEventId = enrollUuid('move');
