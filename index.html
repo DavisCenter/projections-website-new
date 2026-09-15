@@ -2319,13 +2319,13 @@ const storage = (() => {
 // Each classroom carries its age range in months. Used both for the displayed
 // age range label and for live classroom assignment based on child's current age.
 const CLASSROOMS = [
-  { id: 'infant_a',      name: 'Infant A',      ageRange: '6 weeks – 9 months',  minMonths: 0,  maxMonths: 9,  ratio: '1:4',  capacity: 7  },
-  { id: 'infant_b',      name: 'Infant B',      ageRange: '9 – 15 months',       minMonths: 9,  maxMonths: 15, ratio: '1:5',  capacity: 8  },
-  { id: 'toddlers',      name: 'Toddlers',      ageRange: '15 – 24 months',      minMonths: 15, maxMonths: 24, ratio: '1:6',  capacity: 10 },
-  { id: 'twos',          name: 'Twos',          ageRange: '24 – 36 months',      minMonths: 24, maxMonths: 36, ratio: '1:7',  capacity: 12 },
-  { id: 'preschool_one', name: 'Preschool One', ageRange: '3 – 3.5 years',       minMonths: 36, maxMonths: 42, ratio: '1:9',  capacity: 9  },
-  { id: 'preschool_two', name: 'Preschool Two', ageRange: '3.5 – 4.5 years',     minMonths: 42, maxMonths: 54, ratio: '1:11', capacity: 13 },
-  { id: 'prek',          name: 'PreK',          ageRange: '4.5 – 5 years',       minMonths: 54, maxMonths: 60, ratio: '1:13', capacity: 13 }
+  { id: 'infant_a',      name: 'Infant Foundations',      ageRange: '6 weeks – 9 months',  minMonths: 0,  maxMonths: 9,  ratio: '1:4',  capacity: 7  },
+  { id: 'infant_b',      name: 'Infant Explorers',      ageRange: '9 – 15 months',       minMonths: 9,  maxMonths: 15, ratio: '1:5',  capacity: 8  },
+  { id: 'toddlers',      name: 'Toddler Foundations',      ageRange: '15 – 24 months',      minMonths: 15, maxMonths: 24, ratio: '1:6',  capacity: 10 },
+  { id: 'twos',          name: 'Toddler Explorers',          ageRange: '24 – 36 months',      minMonths: 24, maxMonths: 36, ratio: '1:7',  capacity: 12 },
+  { id: 'preschool_one', name: 'Discovery Preschool', ageRange: '3 – 3.5 years',       minMonths: 36, maxMonths: 42, ratio: '1:9',  capacity: 16  },
+  { id: 'preschool_two', name: 'Pre-Kindergarten', ageRange: '3.5 – 4.5 years',     minMonths: 42, maxMonths: 54, ratio: '1:11', capacity: 9 },
+  { id: 'prek',          name: 'Transitional Kindergarten',          ageRange: '4.5 – 5 years',       minMonths: 54, maxMonths: 60, ratio: '1:13', capacity: 13 }
 ];
 
 // Resolve a classroom from an age in months. Defaults: too young → Infant A, too old → PreK.
