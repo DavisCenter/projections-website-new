@@ -2328,7 +2328,7 @@ const CLASSROOMS = [
   { id: 'prek',          name: 'Transitional Kindergarten',          ageRange: '4.5 – 5 years',       minMonths: 54, maxMonths: 60, ratio: '1:13', capacity: 13 }
 ];
 
-// Resolve a classroom from an age in months. Defaults: too young → Infant A, too old → PreK.
+// Resolve a classroom from an age in months. Defaults: too young → Infant Foundations, too old → PreK.
 function getClassroomForAge(ageMonths) {
   if (ageMonths === null || ageMonths === undefined || isNaN(ageMonths)) {
     return CLASSROOMS[0].id;
